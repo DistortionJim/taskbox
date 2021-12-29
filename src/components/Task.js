@@ -20,7 +20,7 @@ export const Task = ({
   <Flex
     as="li"
     _notLast={{
-      borderBottom: '1px',
+      borderBottom: '3px',
       borderColor: 'gray.200',
     }}
     h={12}
@@ -47,7 +47,7 @@ export const Task = ({
         flex="1 1 auto"
         color={state === 'TASK_ARCHIVED' ? 'gray.400' : 'gray.700'}
         textDecoration={state === 'TASK_ARCHIVED' ? 'line-through' : 'none'}
-        fontSize="md"
+        fontSize="sm"
         fontWeight="bold"
         isTruncated
         value={title}
